@@ -1,6 +1,6 @@
 # Canonical CrossTrade
 
-![Contract Composition](https://github.com/tokamak-network/Canonical-cross-chain-swap/img/cct.png)
+![Contract Composition](https://github.com/tokamak-network/Canonical-cross-chain-swap/blob/main/img/cct.png)
 
 
 The CrossTrade system consists of canonical logic contracts deployed on both L1 (Ethereum sepolia) and L2 (Optimism sepolia and Arbitrum sepolia). The system enables secure cross-chain token transfers between layers.
@@ -84,20 +84,3 @@ This is a function that changes the value that the requester wants to receive.
     - npm install 
     - .env.example copy .env and setting
     - update json
-    ```solidity
-    #Optimism git repository
-    ./packages/contract-bedrock/deployments/31337-deploy.json contents of the file copy
-
-    #crossTrade git repository
-    ./test/data/deployed.devnetL1.json contents of the file paste
-
-    #Optimism git repository
-    https://github.com/ethereum-optimism/optimism/blob/129032f15b76b0d2a940443a39433de931a97a44/packages/contracts-bedrock/src/constants.ts contents of the file copy
-
-    #crossTrade git repository
-    ./test/data/predeployed.devnetL1.json contents of the file paste
-    ```
-
-    - start the test
-
-    ```solidity
