@@ -64,23 +64,10 @@ This is a function that changes the value that the requester wants to receive.
 
 ## How to Test (Optimism)
 1. **Install the required utilities**
-    ```solidity
-    brew install make jq just
-    ```
+    npm install
 
-
-5. **hardhat.config.ts check**
-    ```solidity
-    devnetL1: {
-        url: 'http://localhost:8545',
-    }
-    devnetL2: {
-        url: 'http://localhost:9545',
-    }
-    ```
 
 2. **crossTrade Test**
-    - git clone https://github.com/tokamak-network/crossTrade/tree/main
+    - git clone 
     - npm install 
     - .env.example copy .env and setting
-    - update json
