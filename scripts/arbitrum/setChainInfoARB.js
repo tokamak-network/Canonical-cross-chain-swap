@@ -3,8 +3,8 @@ require('dotenv').config();
 
 async function main() {
   // Contract addresses - replace these with your deployed contract addresses
-  const L1_CROSS_TRADE_ARB_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-  const L2_CROSS_TRADE_ARB_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const L1_CROSS_TRADE_ARB_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
+  const L2_CROSS_TRADE_ARB_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
   const INBOX_ADDRESS = "0xaAe29B0366299461418F5324a79Afc425BE5ae21";  // Arbitrum Sepolia Inbox
   const L2_CHAIN_ID = "421614";  // Arbitrum Sepolia chain ID
 

@@ -34,6 +34,34 @@ module.exports = {
       },
     },
   },
+
+  etherscan: {
+    apiKey: {
+      optimismSepolia: `${process.env.OP_SEPOLIA_APY_KEY}`,
+      sepolia: `${process.env.SEPOLIA_APY_KEY}`
+    },
+    customChains: [
+      {
+        network: "optimismSepolia",
+        chainId: 11155420,
+        urls: {
+          apiURL: "https://api-sepolia-optimistic.etherscan.io/api",
+          browserURL: "https://sepolia-optimistic.etherscan.io"
+        },
+      },
+      {
+        network: "thanosSepolia",
+        chainId: 111551119090,
+        urls: {
+            apiURL: "https://explorer.thanos-sepolia.tokamak.network/api",
+            browserURL: "https://explorer.thanos-sepolia.tokamak.network/",
+        },
+      },
+  
+    ]
+
+
+  },
   networks: {
     l1: {
       url: "http://127.0.0.1:8545",
@@ -50,16 +78,20 @@ module.exports = {
       ],
     },
     sepolia: {
-      url: `${process.env.ETH_NODE_URI_sepolia}`,
+      url: `https://sepolia.drpc.org`,
+      accounts: [`${process.env.PRIVATE_KEY}`],
+    },
+    optimismSepolia: {
+      url: `https://sepolia.optimism.io`,
       accounts: [`${process.env.PRIVATE_KEY}`],
     },
     arbitrumSepolia: {
       url: `https://endpoints.omniatech.io/v1/arbitrum/sepolia/public`,
       accounts: [`${process.env.PRIVATE_KEY}`],
     },
-    titanSepolia: {
+    thanosSepolia: {
       url: 'https://rpc.thanos-sepolia-test.tokamak.network',
       accounts: [`${process.env.PRIVATE_KEY}`],
     }
-  }
-};
+  },
+}

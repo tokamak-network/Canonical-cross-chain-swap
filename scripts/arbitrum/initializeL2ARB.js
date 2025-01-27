@@ -2,8 +2,8 @@ const hre = require("hardhat");
 require('dotenv').config();
 
 async function main() {
-    const L2_CROSS_TRADE_ARB_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-    const L1_CROSS_TRADE_ARB_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+    const L2_CROSS_TRADE_ARB_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
+    const L1_CROSS_TRADE_ARB_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
     const NATIVE_TOKEN_L2 = "0x0000000000000000000000000000000000000000";  // ARB Sepolia ETH
     const L1_CHAIN_ID = "11155111";  // Sepolia chain ID
 

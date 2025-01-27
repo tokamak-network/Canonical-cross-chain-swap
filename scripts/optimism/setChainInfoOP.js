@@ -3,11 +3,10 @@ require('dotenv').config();
 
 async function main() {
   // Contract addresses - replace these with your deployed contract addresses
-  const L1_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-  const L2_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-  const CROSS_DOMAIN_MESSENGER = "0x4200000000000000000000000000000000000007";  // Optimism's CrossDomainMessenger address
+  const L1_CROSS_TRADE_OP_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
+  const L2_CROSS_TRADE_OP_ADDRESS = "0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E";
+  const CROSS_DOMAIN_MESSENGER = "0x58Cc85b8D04EA49cC6DBd3CbFFd00B4B8D6cb3ef";  // Optimism's CrossDomainMessenger address
   const L2_CHAIN_ID = "11155420";  // Optimism Sepolia chain ID
-
 
   console.log("Setting up chain information for Optimism...");
   console.log("L1 Contract:", L1_CROSS_TRADE_OP_ADDRESS);

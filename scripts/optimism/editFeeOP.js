@@ -1,19 +1,19 @@
 const hre = require("hardhat");
 
 async function main() {
-  const L1_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const L1_CROSS_TRADE_OP_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
 
   // Parameters for editing the fee
   const params = {
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
     l2token: "0x0000000000000000000000000000000000000000", // ETH on L2
-    totalAmount: hre.ethers.parseEther("1.0"), // Total amount from request
-    initialctAmount: hre.ethers.parseEther("0.1"), // Initial CT amount from request
-    editedctAmount: hre.ethers.parseEther("0.15"), // New amount to receive
-    salecount: 1n, // The saleCount from the request event
+    totalAmount: hre.ethers.parseEther("0.1"), // Total amount from request
+    initialctAmount: hre.ethers.parseEther("0.02"), // Initial CT amount from request
+    editedctAmount: hre.ethers.parseEther("0.03"), // New amount to receive
+    salecount: 2n, // The saleCount from the request event
     l2chainId: 11155420n, // OP Sepolia chain ID
-    hash: "0x8a93d2d389d87d8e53ead338c3d96e873f6dbf2f505939c627c3f35a29cc2c24" // Hash from the request event
-  };
+    hash: "0x7779c0dde038d0d5bb6bac2d15c4bc6df8c32581b6365e8462cba402d2f237bd" // Hash from the request event
+  };       
 
   console.log("Editing fee on L1CrossTradeOP...");
   console.log("Contract Address:", L1_CROSS_TRADE_OP_ADDRESS);

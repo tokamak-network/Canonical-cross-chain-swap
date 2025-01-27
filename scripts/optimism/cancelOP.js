@@ -1,18 +1,18 @@
 const hre = require("hardhat");
 
 async function main() {
-  const L1_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const L1_CROSS_TRADE_OP_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
 
   // Parameters for canceling the request
   const params = {
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
     l2token: "0x0000000000000000000000000000000000000000", // ETH on L2
-    totalAmount: hre.ethers.parseEther("1.0"), // Total amount from request
-    initialctAmount: hre.ethers.parseEther("0.1"), // Initial CT amount from request
-    salecount: 1n, // The saleCount from the request event
+    totalAmount: hre.ethers.parseEther("0.1"), // Total amount from request
+    initialctAmount: hre.ethers.parseEther("0.02"), // Initial CT amount from request
+    salecount: 3n, // The saleCount from the request event
     l2chainId: 11155420n, // OP Sepolia chain ID
     minGasLimit: 200000, // uint32
-    hash: "0x8a93d2d389d87d8e53ead338c3d96e873f6dbf2f505939c627c3f35a29cc2c24" // Hash from the request event
+    hash: "0x024ae3d4a9ee855946b00f24c4b8ecd7e58e2f0191c541761608f0ac37acb2d6" // Hash from the request event
   };
 
   console.log("Canceling request on L1CrossTradeOP...");

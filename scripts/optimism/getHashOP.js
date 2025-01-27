@@ -1,18 +1,18 @@
 const hre = require("hardhat");
 
 async function main() {
-  const L1_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const L1_CROSS_TRADE_OP_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
 
   // Parameters for getHash function
   const params = {
     l1token: "0x0000000000000000000000000000000000000000", // ETH by default
     l2token: "0x0000000000000000000000000000000000000000", // ETH by default
-    requestor: "0x0000000000000000000000000000000000000000",
-    totalAmount: hre.ethers.parseEther("1.0"), // 1 ETH as example
-    ctAmount: hre.ethers.parseEther("0.1"), // 0.1 ETH as example
-    saleCount: 1, // example sale count
-    startChainId: 11155420, // OP Sepolia chain ID
-    endChainId: 11155111 // Sepolia chain ID
+    requestor: "0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C",
+    totalAmount: hre.ethers.parseEther("0.1"), // 1 ETH as example
+    ctAmount: hre.ethers.parseEther("0.02"), // 0.1 ETH as example
+    saleCount: 3, // example sale count
+    startChainId: 11155420n, // OP Sepolia chain ID
+    endChainId: 11155111n // Sepolia chain ID
   };
 
 

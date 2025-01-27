@@ -1,15 +1,15 @@
 const hre = require("hardhat");
 
 async function main() {
-  const L2_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const L2_CROSS_TRADE_OP_ADDRESS = "0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E";
 
   // Request parameters
   const params = {
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
     l2token: "0x0000000000000000000000000000000000000000", // ETH on L2
-    totalAmount: hre.ethers.parseEther("1.0"), // Amount to provide on L2
-    ctAmount: hre.ethers.parseEther("0.1"), // Amount to receive on L1
-    l1chainId: 11155111n // Sepolia chain ID
+    totalAmount: hre.ethers.parseEther("0.1"), // Amount to provide on L2
+    ctAmount: hre.ethers.parseEther("0.02"), // Amount to receive on L1
+    l1chainId: 11155111 // Sepolia chain ID
   };
 
   console.log("Making request on L2CrossTradeOP...");

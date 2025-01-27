@@ -1,21 +1,23 @@
 const hre = require("hardhat");
 
 async function main() {
-  const L1_CROSS_TRADE_OP_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const L1_CROSS_TRADE_OP_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
 
   // Parameters for providing the cross-trade
   const params = {
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
     l2token: "0x0000000000000000000000000000000000000000", // ETH on L2
-    requestor: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266", // address that made the request
-    totalAmount: hre.ethers.parseEther("1.0"), // Total amount from request
-    initialctAmount: hre.ethers.parseEther("0.1"), // Initial CT amount from request
-    editedAmount: 0n, // If the amount was edited (0 if not edited)
-    salecount: 1n, // The saleCount from the request event
+    requestor: "0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C", // address that made the request
+    totalAmount: hre.ethers.parseEther("0.1"), // Total amount from request
+    initialctAmount: hre.ethers.parseEther("0.02"), // Initial CT amount from request
+    editedAmount: hre.ethers.parseEther("0.03"), // New amount to receive
+    salecount: 2n, // The saleCount from the request event
     l2chainId: 11155420n, // OP Sepolia chain ID
     minGasLimit: 200000n, // Minimum gas limit for L2 execution
-    hash: "0x8a93d2d389d87d8e53ead338c3d96e873f6dbf2f505939c627c3f35a29cc2c24" // Hash from the request event
+    hash: "0x7779C0DDE038D0D5BB6BAC2D15C4BC6DF8C32581B6365E8462CBA402D2F237BD" // Hash from the request event
   };
+
+  const value_to_send = params.editedAmount != 0n ? params.editedAmount : params.initialctAmount;
 
   console.log("Providing CT on L1CrossTradeOP...");
   console.log("Contract Address:", L1_CROSS_TRADE_OP_ADDRESS);
@@ -51,7 +53,7 @@ async function main() {
       params.minGasLimit,
       params.hash,
       {
-        value: params.initialctAmount // Include ETH value since we're using native token
+        value: value_to_send // Include ETH value since we're using native token
       }
     );
 
