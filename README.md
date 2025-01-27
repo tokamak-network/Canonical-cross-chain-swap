@@ -69,16 +69,16 @@ This is a function that changes the value that the requester wants to receive.
 ### Deploy and setup the contracts on Optimism Sepolia and Ethereum Sepolia
 
 **Install the required utilities**
-    ```
+
     npm install
-    ```
-    in env file set the private key of the account you want to use for the deployment
+
+ in env file set the private key of the account you want to use for the deployment
 
 **1.Deploy L1CrossTradeOP**
 
     npx hardhat run scripts/optimism/deployL1CrossTradeOP.js --network sepolia
 
-result: L1CrossTradeOP deployed to: 0xd61337c07fa197742301E74fD0AF6318049f16a6
+ result: L1CrossTradeOP deployed to: 0xd61337c07fa197742301E74fD0AF6318049f16a6
  https://sepolia.etherscan.io/address/0xd61337c07fa197742301E74fD0AF6318049f16a6
 
 
@@ -86,37 +86,37 @@ result: L1CrossTradeOP deployed to: 0xd61337c07fa197742301E74fD0AF6318049f16a6
 
     npx hardhat run scripts/optimism/deployL2CrossTradeOP.js --network optimismSepolia
 
-result: Contract deployed to: 0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
+ result: Contract deployed to: 0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
     https://sepolia-optimistic.etherscan.io/address/0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
 
 
 **1.1.Verify L1CrossTradeOP**
 
-make sure you have the api key in the .env file (from etherscan) -- SEPOLIA_APY_KEY
+ make sure you have the api key in the .env file (from etherscan) -- SEPOLIA_APY_KEY
 
     npx hardhat verify --network sepolia 0xd61337c07fa197742301E74fD0AF6318049f16a6
     
 
 **2.1.Verify L2CrossTradeOP**
 
-make sure you have the api key in the .env file (from optimismSepolia) -- OP_SEPOLIA_APY_KEY
+ make sure you have the api key in the .env file (from optimismSepolia) -- OP_SEPOLIA_APY_KEY
     
     npx hardhat verify --network optimismSepolia 0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
 
 **3.Initialize L1CrossTradeOP(setChainInfo)**
 
-add the addresses in the setChainInfoOP.js file. Check example below:
+ add the addresses in the setChainInfoOP.js file. Check example below:
         
         const L1_CROSS_TRADE_OP_ADDRESS = "0xd61337c07fa197742301E74fD0AF6318049f16a6";
         const L2_CROSS_TRADE_OP_ADDRESS = "0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E";
         const CROSS_DOMAIN_MESSENGER = "0x58Cc85b8D04EA49cC6DBd3CbFFd00B4B8D6cb3ef";
         const L2_CHAIN_ID = "11155420";
         
--run the script:
+ run the script:
         
         npx hardhat run scripts/optimism/setChainInfoOP.js --network sepolia
         
-    result: https://sepolia.etherscan.io/tx/0xdffd3d9f24d71e31b784eb53e29a19dc5325816ecbab2876044eebb197ba2e84
+result: https://sepolia.etherscan.io/tx/0xdffd3d9f24d71e31b784eb53e29a19dc5325816ecbab2876044eebb197ba2e84
 
 **4.Initialize L2CrossTradeOP(initialize)**
     - add the addresses in the initializeL2OP.js file. Check example below:
