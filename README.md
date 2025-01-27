@@ -76,10 +76,8 @@ This is a function that changes the value that the requester wants to receive.
 
 **1.Deploy L1CrossTradeOP**
 
-    ```
     npx hardhat run scripts/optimism/deployL1CrossTradeOP.js --network sepolia
-    ```
-
+    
     - result: L1CrossTradeOP deployed to: 0xd61337c07fa197742301E74fD0AF6318049f16a6
     https://sepolia.etherscan.io/address/0xd61337c07fa197742301E74fD0AF6318049f16a6
 
