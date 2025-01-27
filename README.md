@@ -210,7 +210,7 @@ The flow is complete and the requester has received 0.02 ETH on L1 and the provi
 
 
 
-## Execute cross trade Edit FEE + Provide with new data flow with Native Token.
+## Execute cross trade Edit FEE + Provide with new data flow and Native Token.
 Request on L2 with address: 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C (requester)
 Provide on L1 with address: 0x21a82A114d65DB20d5db33f5c9DBb54f1a8AcF4e (provider)
 
@@ -336,6 +336,7 @@ run the script and make the cancel ON L1:
 result: https://sepolia.etherscan.io/tx/0x04b98a59242999b8ab018b85a55edf39152d577582eabd91f260f862fd3d1b58
 
 **3. Check the data**
+
 Check the data on the L1CrossTradeOP contract: https://sepolia.etherscan.io/tx/0x04b98a59242999b8ab018b85a55edf39152d577582eabd91f260f862fd3d1b58
     -> the request was canceled and the amount was returned to the requestor on L2 (0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C)
 
