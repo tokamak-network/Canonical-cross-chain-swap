@@ -92,14 +92,14 @@ This is a function that changes the value that the requester wants to receive.
 
 **1.1.Verify L1CrossTradeOP**
 
- make sure you have the api key in the .env file (from etherscan) -- SEPOLIA_APY_KEY
+ Make sure you have the api key in the .env file (from etherscan) -- SEPOLIA_APY_KEY
 
     npx hardhat verify --network sepolia 0xd61337c07fa197742301E74fD0AF6318049f16a6
     
 
 **2.1.Verify L2CrossTradeOP**
 
- make sure you have the api key in the .env file (from optimismSepolia) -- OP_SEPOLIA_APY_KEY
+ Make sure you have the api key in the .env file (from optimismSepolia) -- OP_SEPOLIA_APY_KEY
     
     npx hardhat verify --network optimismSepolia 0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
 
@@ -146,7 +146,7 @@ There are 2 ways to execute the trade (using the scripts or etherscan/optimismSc
 
 **1. Request on L2 with address: 0xd61337c07fa197742301E74fD0AF6318049f16a6 (requester)**
 
-make sure you have the private key in the .env file for the requester address. 
+Make sure you have the private key in the .env file for the requester address. 
 ADJUST the parameters in the requestOP.js file:
         
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
@@ -164,7 +164,7 @@ result: https://sepolia-optimistic.etherscan.io/tx/0x12aa7301702628f1f26592cfb93
 
 **2. Provide on L1 with address: 0x21a82A114d65DB20d5db33f5c9DBb54f1a8AcF4e (provider)**
 
-make sure you have the private key in the .env file for the provider address.
+Make sure you have the private key in the .env file for the provider address.
 
 Before adjusting the parameters in the script we need to get the hash from the request event.
 
@@ -215,7 +215,7 @@ Request on L2 with address: 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C (requeste
 Provide on L1 with address: 0x21a82A114d65DB20d5db33f5c9DBb54f1a8AcF4e (provider)
 
 **1. Request on L2 with address: 0xd61337c07fa197742301E74fD0AF6318049f16a6 (requester)**
-make sure you have the private key in the .env file for the requester address.
+Make sure you have the private key in the .env file for the requester address.
 ADJUST the parameters in the requestOP.js file:
         
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
@@ -294,7 +294,7 @@ Check the data on the L2CrossTradeOP contract: https://sepolia-optimism.ethersca
 ### Execute cross trade Cancel CT flow with Native Token.
 
 **1. Request on L2 with address: 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C (requester)**
-make sure you have the private key in the .env file for the requstor address.
+Make sure you have the private key in the .env file for the requstor address.
 ADJUST the parameters in the requestOP.js file:
         
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
