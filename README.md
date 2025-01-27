@@ -75,6 +75,7 @@ This is a function that changes the value that the requester wants to receive.
     in env file set the private key of the account you want to use for the deployment
 
 **1.Deploy L1CrossTradeOP**
+
     ```
     npx hardhat run scripts/optimism/deployL1CrossTradeOP.js --network sepolia
     ```
