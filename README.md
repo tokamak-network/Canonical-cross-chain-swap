@@ -77,27 +77,24 @@ This is a function that changes the value that the requester wants to receive.
 **1.Deploy L1CrossTradeOP**
 
     npx hardhat run scripts/optimism/deployL1CrossTradeOP.js --network sepolia
-    
--result: L1CrossTradeOP deployed to: 0xd61337c07fa197742301E74fD0AF6318049f16a6
+
+result: L1CrossTradeOP deployed to: 0xd61337c07fa197742301E74fD0AF6318049f16a6
  https://sepolia.etherscan.io/address/0xd61337c07fa197742301E74fD0AF6318049f16a6
 
 
 **2.Deploy L2CrossTradeOP**
 
-    ```
     npx hardhat run scripts/optimism/deployL2CrossTradeOP.js --network optimismSepolia
-    ```
 
-    - result: Contract deployed to: 0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
+result: Contract deployed to: 0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
     https://sepolia-optimistic.etherscan.io/address/0x6613f8652EAfdFFd95a49428313e52Cc9b77e38E
 
 
 **1.1.Verify L1CrossTradeOP**
-    - make sure you have the api key in the .env file (from etherscan) -- SEPOLIA_APY_KEY
 
-    ```
+make sure you have the api key in the .env file (from etherscan) -- SEPOLIA_APY_KEY
+
     npx hardhat verify --network sepolia 0xd61337c07fa197742301E74fD0AF6318049f16a6
-    ```
     
 
 **2.1.Verify L2CrossTradeOP**
