@@ -210,7 +210,7 @@ The flow is complete and the requester has received 0.02 ETH on L1 and the provi
 
 
 
-### Execute cross trade Edit FEE + Provide with new data flow with Native Token.
+## Execute cross trade Edit FEE + Provide with new data flow with Native Token.
 Request on L2 with address: 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C (requester)
 Provide on L1 with address: 0x21a82A114d65DB20d5db33f5c9DBb54f1a8AcF4e (provider)
 
@@ -291,7 +291,7 @@ Check the data on the L2CrossTradeOP contract: https://sepolia-optimism.ethersca
     -- The flow is complete and the requester has received 0.03 ETH on L1 and the provider has received 0.1 ETH on L2 -- 
 
 
-### Execute cross trade Cancel CT flow with Native Token.
+## Execute cross trade Cancel CT flow with Native Token.
 
 **1. Request on L2 with address: 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C (requester)**
 Make sure you have the private key in the .env file for the requstor address.
