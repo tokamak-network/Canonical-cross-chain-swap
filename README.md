@@ -146,7 +146,7 @@ There are 2 ways to execute the trade (using the scripts or etherscan/optimismSc
 
 **1. Request on L2 with address: 0xd61337c07fa197742301E74fD0AF6318049f16a6 (requester)**
 
-make sure you have the private key in the .env file for the address 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C.
+make sure you have the private key in the .env file for the requester address. 
 ADJUST the parameters in the requestOP.js file:
         
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
@@ -215,7 +215,7 @@ Request on L2 with address: 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C (requeste
 Provide on L1 with address: 0x21a82A114d65DB20d5db33f5c9DBb54f1a8AcF4e (provider)
 
 **1. Request on L2 with address: 0xd61337c07fa197742301E74fD0AF6318049f16a6 (requester)**
-make sure you have the private key in the .env file for the address 0xB4032ff3335F0E54Fb0291793B35955e5dA30B0C.
+make sure you have the private key in the .env file for the requester address.
 ADJUST the parameters in the requestOP.js file:
         
     l1token: "0x0000000000000000000000000000000000000000", // ETH on L1
