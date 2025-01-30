@@ -1,4 +1,4 @@
-# Canonical CrossTrade
+# Canonical Cross-chain Swap
 
 ![Contract Composition](https://github.com/tokamak-network/Canonical-cross-chain-swap/blob/main/img/cct.png)
 
