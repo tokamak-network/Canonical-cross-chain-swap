@@ -42,6 +42,8 @@ Once a `provideCT` transaction is executed, the request becomes immutable:
 - L1CrossDomainMessenger: [0x58Cc85b8D04EA49cC6DBd3CbFFd00B4B8D6cb3ef]
 - L2CrossDomainMessenger: [0x4200000000000000000000000000000000000007]
 
+-> ***used for future L2<->L2 interactions
+- Bridge from Sepolia to Optimism-sepolia: [0xFBb0621E0B23b5478B630BD55a5f21f67730B0F1]
 
 ## Contract function
 
